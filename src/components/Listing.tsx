@@ -1,7 +1,7 @@
 import { ListingProps } from "../types/interfaces"
 
 
-export function Listing({items}: ListingProps) {
+export function Listing({items = []}: ListingProps) {
 
     const formattedPrice = (currency: string | undefined, price: string | undefined) => {
       if (currency === 'USD') return `$${price}`;
